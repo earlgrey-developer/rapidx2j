@@ -6,6 +6,7 @@
         'src/rapidx2j.cc',
         'src/parser.cc'
       ],
+      'cflags': [ '-Wno-cast-function-type' ],
       'cflags!': [ '-fno-exceptions' ],
       'cflags_cc!': [ '-fno-exceptions' ],
       'include_dirs': ["<!(node -e \"require('nan')\")"],
